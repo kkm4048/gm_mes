@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA2FB58E-9608-4C88-8D74-F7D88B0623FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gm_mes</RootNamespace>
+    <AssemblyName>gm_mes</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeX">
+      <HintPath>lib\BarcodeX.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=14.45.20201.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3526\Bin\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=14.45.20201.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3526\Bin\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls_color.cs" />
+    <Compile Include="cls_com.cs" />
+    <Compile Include="frm공정메인.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm공정메인.Designer.cs">
+      <DependentUpon>frm공정메인.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm기초코드_공정별검사항목등록.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm기초코드_공정별검사항목등록.Designer.cs">
+      <DependentUpon>frm기초코드_공정별검사항목등록.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm품질관리_품질판정조회_상세조회.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm품질관리_품질판정조회_상세조회.Designer.cs">
+      <DependentUpon>frm품질관리_품질판정조회_상세조회.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm품질관리_품질판정조회.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm품질관리_품질판정조회.Designer.cs">
+      <DependentUpon>frm품질관리_품질판정조회.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm제조관리_생산실적등록.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm제조관리_생산실적등록.Designer.cs">
+      <DependentUpon>frm제조관리_생산실적등록.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm기초코드_고객사등록.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm기초코드_고객사등록.Designer.cs">
+      <DependentUpon>frm기초코드_고객사등록.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm기초코드_공정명등록.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm기초코드_공정명등록.Designer.cs">
+      <DependentUpon>frm기초코드_공정명등록.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm라벨출력_라벨출력.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm라벨출력_라벨출력.Designer.cs">
+      <DependentUpon>frm라벨출력_라벨출력.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm메인.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm메인.Designer.cs">
+      <DependentUpon>frm메인.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm설정.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm설정.Designer.cs">
+      <DependentUpon>frm설정.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frm기초코드_생산구분코드.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm기초코드_생산구분코드.Designer.cs">
+      <DependentUpon>frm기초코드_생산구분코드.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm기타_고객사.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm기타_고객사.Designer.cs">
+      <DependentUpon>frm기타_고객사.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm기타_거치번호.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm기타_거치번호.Designer.cs">
+      <DependentUpon>frm기타_거치번호.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm공정메인.resx">
+      <DependentUpon>frm공정메인.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm기초코드_공정별검사항목등록.resx">
+      <DependentUpon>frm기초코드_공정별검사항목등록.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm품질관리_품질판정조회_상세조회.resx">
+      <DependentUpon>frm품질관리_품질판정조회_상세조회.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm품질관리_품질판정조회.resx">
+      <DependentUpon>frm품질관리_품질판정조회.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm제조관리_생산실적등록.resx">
+      <DependentUpon>frm제조관리_생산실적등록.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm기초코드_고객사등록.resx">
+      <DependentUpon>frm기초코드_고객사등록.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm기초코드_공정명등록.resx">
+      <DependentUpon>frm기초코드_공정명등록.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm라벨출력_라벨출력.resx">
+      <DependentUpon>frm라벨출력_라벨출력.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm메인.resx">
+      <DependentUpon>frm메인.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm설정.resx">
+      <DependentUpon>frm설정.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm기초코드_생산구분코드.resx">
+      <DependentUpon>frm기초코드_생산구분코드.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm기타_고객사.resx">
+      <DependentUpon>frm기타_고객사.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm기타_거치번호.resx">
+      <DependentUpon>frm기타_거치번호.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\barcode.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\cancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\작업중.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\작업중_24_24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\작업중_12_12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\작업중_16_16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\대기중_16_16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\중지_16_16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\인계_16_16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
